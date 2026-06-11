@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <main class="login-card">
+        <!-- Bloco Superior Fixo -->
+        <div style="margin-bottom: 24px;">
+            <h1 id="titulo-card" style="margin-bottom: 24px;">Welcome Back!</h1>
+
+            <div class="opicoes">
+                <a class="button active" id="btn-aba-login" href="#Login">Login</a>
+                <a class="button" id="btn-aba-signup" href="#SignUp">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Bloco Inferior com Rolagem Independente -->
+        <form class="txt-box" id="login-form">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+
+            <!-- O campo de cadastro aparecerá aqui dentro da área de rolagem -->
+            <div class="input-group campo-cadastro" id="grupo-confirmar-senha" style="display: none;">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" placeholder="Confirme sua senha">
+            </div>
+
+            <button type="submit" id="btn-submit" class="button">Login</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

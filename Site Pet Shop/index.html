@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conectaMH - Mundo Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE -->
+    <header class="main-header">
+        <img class="logo" src="Logo-petshop.png" alt="Logo Mundo Pet">
+        <h1 class="txt_clean">🐾Mundo Pet🐾</h1>
+        <nav class="menu">
+            <a class="button" href="#servicos">Serviços</a>
+            <a class="button" href="#produtos">Produtos</a>
+            <a class="button" href="#avaliacoes">Avaliações</a>
+        </nav>
+
+        <a href="login.html" class="button_login">Login</a>
+
+        <section class="boas-vindas">
+            <p class="saudacao">Bem-vindo ao Mundo Pet,</p>
+            <p class="descricao">onde você encontra tudo para o seu melhor amigo!</p>
+        </section>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main>
+        
+        <!-- SEÇÃO DE SERVIÇOS E PREÇOS -->
+        <section id="servicos" class="box-servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Cuidado e carinho profissional para o seu pet.</p>
+            
+            <table class="tabela-precos">
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Porte Pequeno</th>
+                        <th>Porte Médio</th>
+                        <th>Porte Grande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banho Simples</td>
+                        <td>R$ 40,00</td>
+                        <td>R$ 55,00</td>
+                        <td>R$ 70,00</td>
+                    </tr>
+                    <tr>
+                        <td>Banho e Tosa leva-e-traz</td>
+                        <td>R$ 75,00</td>
+                        <td>R$ 95,00</td>
+                        <td>R$ 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Tosa Higiênica</td>
+                        <td>R$ 30,00</td>
+                        <td>R$ 40,00</td>
+                        <td>R$ 50,00</td>
+                    </tr>
+                    <tr>
+                        <td>Hidratação de Pelagem</td>
+                        <td>R$ 25,00</td>
+                        <td>R$ 35,00</td>
+                        <td>R$ 45,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+        <section id="produtos" class="box-produtos">
+            <h2>Destaques do Mês</h2>
+            <p>Os melhores produtos para nutrir e divertir seu companheiro.</p>
+            
+            <div class="lista-produtos">
+                <div class="card-produto">
+                    <img src="racao-premium.png" alt="Ração Premium">
+                    <h3>Ração Premium Cães Adultos 15kg</h3>
+                    <p class="preco-produto">R$ 189,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="brinquedo-morder.png" alt="Brinquedo Mordedor">
+                    <h3>Brinquedo Mordedor Interativo</h3>
+                    <p class="preco-produto">R$ 34,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="arranhador-gato.png" alt="Arranhador para Gatos">
+                    <h3>Arranhador Torre para Gatos</h3>
+                    <p class="preco-produto">R$ 129,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE AVALIAÇÕES -->
+        <section id="avaliacoes" class="box-avaliacoes">
+            <h2>O que dizem nossos clientes</h2>
+            <p>A satisfação de quem confia no nosso trabalho.</p>
+            
+            <div class="lista-depoimentos">
+                <blockquote class="depoimento">
+                    <p>"O melhor petshop da região! O atendimento no banho e tosa é impecável, meu Luke sempre volta cheiroso e feliz."</p>
+                    <cite>– Mariana Silva (Dona do Luke, Golden Retriever)</cite>
+                </blockquote>
+
+                <blockquote class="depoimento">
+                    <p>"Preços justos e entrega rápida de ração. O sistema de leva-e-traz deles facilita demais a minha rotina."</p>
+                    <cite>– Carlos Eduardo (Dono do Miau, Gato Siamês)</cite>
+                </blockquote>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Mundo Pet. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- VÍNCULO COM O ARQUIVO JAVASCRIPT (Controla o Sol/Lua e Modo Escuro) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
