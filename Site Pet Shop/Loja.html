@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Clean - Tudo para o seu pet</title>
+    <link rel="stylesheet" href="styles/Loja.css">
+</head>
+<body>
+
+    <div id="alternador-tema">🌓</div>
+
+    <header class="main-header">
+        <div class="logo">Pet<span>Shop</span></div>
+        <h1 class="txt_clean">Mundo Pet</h1>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Busque rações, brinquedos, remédios...">
+        </div>
+        
+        <nav class="menu" id="top-tags">
+            <span class="button tag active" data-category="todos">Todos</span>
+            <span class="button tag" data-category="caes">Cães</span>
+            <span class="button tag" data-category="gatos">Gatos</span>
+            <span class="button tag" data-category="passaros">Pássaros</span>
+            <span class="button tag" data-category="peixes">Peixes</span>
+        </nav>
+        
+        <a href="login.html" class="button_login">Entre ou Cadastre-se</a>
+
+        <div class="boas-vindas">
+            <h2 class="saudacao">Olá, seja bem-vindo!</h2>
+            <p class="descricao">Descubra as melhores soluções e ofertas para o cuidado do seu melhor amigo.</p>
+        </div>
+    </header>
+
+    <main class="store-container">
+        
+        <aside class="sidebar box-servicos">
+            <div class="filter-box">
+                <h3>Categorias</h3>
+                <ul id="sidebar-categories">
+                    <li><a href="#" data-category="todos">Todos os Pets</a></li>
+                    <li><a href="#" data-category="caes">Cães</a></li>
+                    <li><a href="#" data-category="gatos">Gatos</a></li>
+                    <li><a href="#" data-category="passaros">Pássaros</a></li>
+                    <li><a href="#" data-category="peixes">Peixes</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-box">
+                <h3>Filtrar por Preço</h3>
+                <div class="price-inputs">
+                    <input type="number" id="price-min" placeholder="Mín R$">
+                    <input type="number" id="price-max" placeholder="Máx R$">
+                </div>
+            </div>
+
+            <div class="filter-box">
+                <h3>Marcas Parceiras</h3>
+                <label><input type="checkbox" class="brand-filter" value="royal-canin"> Royal Canin</label>
+                <label><input type="checkbox" class="brand-filter" value="premier"> Premier</label>
+                <label><input type="checkbox" class="brand-filter" value="whiskas"> Whiskas</label>
+                <label><input type="checkbox" class="brand-filter" value="golden"> Golden</label>
+            </div>
+        </aside>
+
+        <section class="products-section box-produtos">
+            <h2>Nossos Produtos</h2>
+            <p>Selecione os melhores itens em promoção com estoque garantido.</p>
+            
+            <div class="products-toolbar">
+                <div class="sort-options">
+                    <label>Ordenar listagem:</label>
+                    <select id="sort-select">
+                        <option value="procurados">Mais procurados</option>
+                        <option value="menor">Menor preço</option>
+                        <option value="maior">Maior preço</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lista-produtos" id="products-grid"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        &copy; 2026 PetShop Clean - Todos os direitos reservados. Tudo o que o seu melhor amigo precisa em um só lugar.
+    </footer>
+
+    <script src="scripts/loja.js"></script>
+</body>
+</html>
